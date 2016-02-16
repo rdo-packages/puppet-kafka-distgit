@@ -1,3 +1,5 @@
-# UUID                                  	Group Name
-#
-210e5064c2ecfa4045fbad6720203a4ae0c77467	puppet-kafka-distgit-ptl
+# UUID          Group Name
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
+5535beb794318d9ccc5811b122e63993d7000bd9       	puppet-kafka-distgit-core
+210e5064c2ecfa4045fbad6720203a4ae0c77467        	puppet-kafka-distgit-ptl
+global:Registered-Users		Registered Users
