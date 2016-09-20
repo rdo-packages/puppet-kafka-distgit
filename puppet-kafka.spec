@@ -7,8 +7,8 @@
 
 
 Name:           puppet-kafka
-Version:        XXX
-Release:        XXX
+Version:        2.1.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Module for managing apache kafka
 License:        Apache 2.0
 
@@ -50,4 +50,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/kafka/
 
 
 %changelog
+* Wed Sep 21 2016 Haikel Guemar <hguemar@fedoraproject.org> - 2.1.0-1.061ef74.git
+- Newton update 2.1.0 (061ef746e4a0534f652ead2098a03ff09b859461)
+
 
