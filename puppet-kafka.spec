@@ -1,6 +1,6 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-kafka
-%global commit 061ef746e4a0534f652ead2098a03ff09b859461
+%global commit 4bbf44eb9fed06afced809a6bb8b8d94f04d87c3
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
@@ -8,7 +8,7 @@
 
 Name:           puppet-kafka
 Version:        2.1.0
-Release:        1%{?alphatag}%{?dist}
+Release:        2%{?alphatag}%{?dist}
 Summary:        Module for managing apache kafka
 License:        Apache 2.0
 
@@ -50,6 +50,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/kafka/
 
 
 %changelog
+* Tue Nov 15 2016 Alfredo Moralejo <amoralej@redhat.com> 2.1.0-2.4bbf44e.git
+- Newton update 2.1.0 (4bbf44eb9fed06afced809a6bb8b8d94f04d87c3)
+
 * Wed Sep 21 2016 Haikel Guemar <hguemar@fedoraproject.org> - 2.1.0-1.061ef74.git
 - Newton update 2.1.0 (061ef746e4a0534f652ead2098a03ff09b859461)
 
