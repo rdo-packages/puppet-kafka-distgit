@@ -10,7 +10,7 @@ Name:           puppet-kafka
 Version:        XXX
 Release:        XXX
 Summary:        Module for managing apache kafka
-License:        Apache 2.0
+License:        ASL 2.0
 
 URL:            https://github.com/puppet-community/puppet-kafka
 
