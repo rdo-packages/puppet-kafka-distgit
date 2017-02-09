@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-kafka
-%global commit 061ef746e4a0534f652ead2098a03ff09b859461
+%global commit 066d7a5bb630a41296428d81d3c1a1232574d008
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-kafka
-Version:        XXX
-Release:        XXX
+Version:        2.2.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Module for managing apache kafka
 License:        ASL 2.0
 
@@ -50,4 +50,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/kafka/
 
 
 %changelog
+* Thu Feb 09 2017 Alfredo Moralejo <amoralej@redhat.com> 2.2.0-1.066d7a5git
+- Ocata update 2.2.0 (066d7a5bb630a41296428d81d3c1a1232574d008)
 
