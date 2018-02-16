@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-kafka
-%global commit 061ef746e4a0534f652ead2098a03ff09b859461
+%global commit 6419b44068a031e557e55a977c0b37d88747e8b2
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-kafka
-Version:        XXX
-Release:        XXX
+Version:        5.0.1
+Release:        0%{?alphatag}%{?dist}
 Summary:        Module for managing apache kafka
 License:        ASL 2.0
 
@@ -50,5 +50,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/kafka/
 
 
 %changelog
+* Thu Feb 15 2018 RDO <dev@lists.rdoproject.org> 5.0.1-0.6419b44git
+- Update to 5.0.1-rc0 (6419b44068a031e557e55a977c0b37d88747e8b2)
+
 
 
