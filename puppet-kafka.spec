@@ -55,4 +55,3 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/kafka/
 - Update to post 5.3.1-rc0 (88aa8669a77a87d518df308ec86177c04acc7b4b)
 
 
-
